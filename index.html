@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat-box">
+        <div class="contact">
+          <div class="info">
+            <img src="portrait.jpg" alt="friend" class="friend"/>
+            <div class="name">
+              <p class="fullName">Mike Riggle</p>
+              <p class="status">online</p>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button class="icon">
+              <img src="search.svg" alt="search" class="icon-svg"/>
+            </button>
+            <button class="icon">
+              <img src="menu.svg" alt="menu" class="icon-svg"/>
+            </button>
+          </div>
+        </div>
+
+        <div id="messages">
+          <!-- Messages will be dynamically added here -->
+        </div>
+
+        <div class="input-container">
+          <input
+            type="text"
+            id="text-input"
+            placeholder="Type your message here"
+          />
+          <div class="input-buttons">
+            <button id="emoji-btn">&#127773;</button>
+            <button id="send-button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
